@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
                                     stringBuilder.append("\n");
                                 }
                                 textView.setText(stringBuilder.toString());
+                                Log.d("Text",stringBuilder.toString());
                             }
                         });
                     }
